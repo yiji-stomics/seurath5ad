@@ -9,3 +9,11 @@ You can install the development version of seurath5ad from GitHub with:
 ```r
 # install.packages("devtools")
 devtools::install_github("yiji-stomics/seurath5ad")
+
+## Usage
+
+library(seurath5ad)
+
+# Example usage
+# Load a raw H5AD file
+seurat_object <- LoadRawH5ad("path/to/your/file.h5ad")
