@@ -34,7 +34,7 @@ LoadRawH5ad <- function(h5ad_path, assay = "Spatial") {
   # load h5ad and create seurat object
   h5ad_obj <- read_h5ad(h5ad_path)
   # extract matrix
-  expression_matrix <- t(h5ad_obj$X)
+  expression_matrix <- Matrix::t(h5ad_obj$X)
   # extract cells and genes information
   cell_metadata <- h5ad_obj$obs
   gene_metadata <- h5ad_obj$var
