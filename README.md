@@ -21,7 +21,6 @@ devtools::install_github("yiji-stomics/seurath5ad")
 
 ## Note
 When loading certain H5AD files, error messages may indicate that Seurat requires matrices in “double” format. It is essential to first convert the matrices to double format using Python.  
-eg.
 
 ```python
 import numpy as np
