@@ -25,5 +25,5 @@ eg.
 
 ```python
 import numpy as np
-data = data.X.astype(np.double)
+data.X = data.X.astype(np.double)
 ```
